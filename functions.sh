@@ -27,6 +27,7 @@ then
     VALIDATE $? MySQL
 else
     echo " MySQL is already installed .. Nothing to do"
+fi
 
 dnf list installed nginx
 if [ $? -ne 0];
@@ -36,3 +37,4 @@ then
     VALIDATE $? nginx
 else
     echo " nginx is already installed .. Nothing to do"
+fi
