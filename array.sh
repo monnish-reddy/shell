@@ -1,4 +1,6 @@
 #!/bin/bash
  fruits=('apple' 'banana' 'pinaple')
  
- echo "firts fruit is : ${fruits[@]}"
+ echo "ffruits are  : ${fruits[@]}"
+ echo " first fruit : ${fruits[0]}"
+  echo "ffruits are  : ${fruits[#]}"
