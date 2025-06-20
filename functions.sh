@@ -20,7 +20,7 @@ VALIDATE(){
 }
 
 dnf list installed mysql
-if [ $? -ne 0];
+if [ $? -ne 0 ];
 then
     echo "MySQL is not installed .. going to install it"
     dnf install mysql -y
@@ -30,7 +30,7 @@ else
 fi
 
 dnf list installed nginx
-if [ $? -ne 0];
+if [ $? -ne 0 ];
 then
     echo "nginx is not installed .. going to install it"
     dnf install nginx -y
