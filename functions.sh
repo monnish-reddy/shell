@@ -1,9 +1,13 @@
 #!/bin/bash
+R='\e[31m'
+G='\e[32m'
+Y='\e[33m'
+N='\e[0m'
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ];
 then 
-    echo "ERROR: Please run the script with root access"
+    echo -e " $R ERROR: Please run the script with root access $N"
     exit 1
 else
     echo "You are running with root access"
@@ -12,9 +16,9 @@ fi
 VALIDATE(){
     if [ $? -eq 0 ];
     then 
-        echo "Installing $2 is ... SUCCESS"
+        echo " Installing $2 is ...$G SUCCESS $N"
     else
-        echo "Installing $2 is ... FAILURE"
+        echo "Installing $2 is ... $R FAILURE $N"
         exit 1
     fi
 }
