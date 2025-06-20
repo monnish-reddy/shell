@@ -5,9 +5,10 @@ Y='\e[33m'
 N='\e[0m'
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shellscript-logs"
+SCRIPT_NAME=$(echo $0|cut -d "." -f1)
+LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
-FILE_NAME=$(echo $0|cut -d "." -f1)
-echo "$FILE_NAME"
+mkdir -p $LOGS_FOLDER
 
 if [ $USERID -ne 0 ];
 then 
