@@ -5,8 +5,8 @@ Y='\e[33m'
 N='\e[0m'
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shellscript-logs"
-SCRIPT_NAME=$0
-FILE_NAME=$($SCRIPT_NAME|cut -d "." -f1)
+
+FILE_NAME=$(echo $0|cut -d "." -f1)
 echo "$FILE_NAME"
 
 if [ $USERID -ne 0 ];
