@@ -1,6 +1,6 @@
 #!/bin/bash
 
-num='10'
+num='40'
 if [ $num -gt '20' ]; then 
 echo " $num is gretaer than 20 "
 else
