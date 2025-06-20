@@ -3,4 +3,4 @@
  
  echo "ffruits are  : ${fruits[@]}"
  echo " first fruit : ${fruits[0]}"
-  echo "ffruits are  : ${fruits[#]}"
+ 
